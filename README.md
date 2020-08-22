@@ -4,9 +4,9 @@ Repeatedly checks for slot availability on bigbasket and notifies user when avai
 Following steps must be followed:  
 1. Register for a bigbasket account.  
 
-2. Go to bigbasketslot.py and mail_sender.py and below the comment 'ENTER DETAILS BELOW', enter the email id and password for your gmail account associated with bigbasket account. **Do not enter the big basket account password.** You may enter a different mail id and password for mail_sender.py if you want notifications on a gmail account different from that of big basket.   
+2. Go to bigbasketslot.py and mail_sender.py and below the comment [ENTER DETAILS BELOW](https://github.com/sriramcu/bigbasket_slotfinder/blob/27d946bb861156ddcdab0a9ca3290d45627b8368/bigbasketslot.py#L16), enter the email id and password for your gmail account associated with bigbasket account. **Do not enter the big basket account password.** You may enter a different mail id and password for mail_sender.py if you want notifications on a gmail account different from that of big basket.   
 
-3. For the program to work, you may need to enable less secure apps in gmail. https://myaccount.google.com/lesssecureapps.  
+3. For the program to work, you may need to enable [less secure apps](https://myaccount.google.com/lesssecureapps) in Gmail.
 
 4. Note that bigbasketslot.py imports from mail_sender.py to send a mail when a slot is found. Thus the two programs must be in same directory or in $PATH for program to work. Also note that bigbasketslot.py **automatically reads and enters OTP** when needed. Thus, once the user executes bigbasketslot.py, no user input is needed. The program executes autonomously. Run the following command on the terminal:  
 `python3 bigbasketslot.py`   

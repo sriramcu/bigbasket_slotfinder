@@ -107,6 +107,17 @@ def get_bb_slot(url):
     my_address = driver.find_element_by_xpath("/html/body/div[1]/div[18]/section[1]/div[2]/div[2]/div/div/div[2]/ul/li/a")
     my_address.click()
     
+    print("Home address chosen")
+    time.sleep(30)
+    
+    try:
+        
+        confirm_address = driver.find_element_by_xpath("/html/body/div[1]/div[18]/div[5]/div[2]/button[1]")
+        confirm_address.click()
+        
+    except Exception as e:
+        print(e)
+    
     time.sleep(5)
 
     while 1:
